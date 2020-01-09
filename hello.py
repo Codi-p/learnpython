@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():    
-    return '<h1>Hello world!aaa your browser is {} </h1>'.format(request.headers)
+    return '<h1>Hello world! Your browser is {} </h1>'.format(request.headers)
 
 @app.route('/user/<name>')
 def user(name):
